@@ -1,4 +1,4 @@
-package com.company.string;
+//package com.company.string;
 
 import java.util.Scanner;
 
@@ -32,6 +32,23 @@ public class Runner {
             case 6:
                 Swap words=new Swap();
                 words.swap();
+                break;
+            case 8:
+                Roman rom=new Roman();
+                rom.convertRoman();
+                break;
+            case 9:
+                RemoveDup rem= new RemoveDup();
+                rem.removeDuplicates();
+                break;
+            case 10:
+                Pattern pat= new Pattern();
+                pat.findPattern();
+                break;
+            case 14:
+                ReturnLast last= new ReturnLast();
+                int length=last.findLength();
+                System.out.println(length);
                 break;
             default:
                 System.out.println("no program");
