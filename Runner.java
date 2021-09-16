@@ -45,10 +45,22 @@ public class Runner {
                 Pattern pat= new Pattern();
                 pat.findPattern();
                 break;
+            case 11:
+                Encode code= new Encode();
+                code.encode();
+                break;
             case 14:
                 ReturnLast last= new ReturnLast();
                 int length=last.findLength();
                 System.out.println(length);
+                break;
+            case 16:
+                Anagram ana= new Anagram();
+                ana.findAnagram();
+                break;
+            case 18:
+                MinOperation min= new MinOperation();
+                min.findMinOperation();
                 break;
             default:
                 System.out.println("no program");
